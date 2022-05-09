@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Advanced Calculator</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Calculator</h1>
+
+        <form id="calculator">
+            <div class="form-control">
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="simple">Simple math calculation</option>
+                    <option value="aoc_circumference">Area of Circle with Circumference</option>
+                    <option value="aoc_radius">Area of Circle with Radius</option>
+                    <option value="aoc_diameter">Area of Circle with Radius</option>
+                    <option value="aor">Area of Rectangle</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="inp-1">First Number</label>
+                <input type="number" name="inp-1" id="inp-1" required>
+            </div>
+
+            <div class="form-control">
+                <label for="operand">Operation</label>
+                <select name="operand" id="operand">
+                    <option value="+">&plus;</option>
+                    <option value="-">&minus;</option>
+                    <option value="*">&times;</option>
+                    <option value="/">&divide;</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="inp-2">Second Number</label>
+                <input type="number" name="inp-2" id="inp-2" required>
+            </div>
+
+            <button class="btn-submit" type="submit">Calculate</button>
+        </form>
+
+        <div class="result-div">
+            <h1>Result</h1>
+            <p class="result-container"></p>
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
