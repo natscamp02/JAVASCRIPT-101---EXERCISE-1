@@ -5,6 +5,7 @@ const firstNumberInp = document.getElementById('inp-1');
 const secondNumberInp = document.getElementById('inp-2');
 const operandInp = document.getElementById('operand');
 
+const resultDiv = document.querySelector('.result-div');
 const resultContainer = document.querySelector('.result-container');
 
 function calculate(e) {
@@ -94,6 +95,7 @@ function calculateAreaOfRectangle(num1, num2) {
 
 function showResults(result) {
 	resultContainer.innerText = result;
+	resultDiv.classList.remove('hidden');
 }
 
 function showFields() {

@@ -7,12 +7,13 @@
 }
 
 main {
-	padding: 5rem;
+	padding: 0 5rem;
 }
 
 .title {
-	margin-bottom: 2rem;
-	text-align: center;
+	text-decoration: underline;
+
+	margin-block: 5rem 2rem;
 }
 
 #calculator {
@@ -29,9 +30,44 @@ main {
 .form-control > * {
 	width: max-content;
 }
+.form-control > :is(input, select) {
+	padding: 0.5rem;
+}
+
+.form-control > :is(input, select):disabled {
+	visibility: hidden;
+}
 
 .btn-submit {
+	border: none;
+	border-radius: 0.25rem;
+	background: cornflowerblue;
+
+	color: #fff;
+
 	width: max-content;
 
-	padding: 0.5rem 1rem;
+	padding: 0.75rem 1rem;
+
+	cursor: pointer;
+}
+
+.result-div {
+	margin-top: 3rem;
+	width: max-content;
+}
+
+.result-div h1 {
+	text-decoration: underline;
+
+	margin-bottom: 1rem;
+}
+
+.result-div p {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.hidden {
+	display: none;
 }
